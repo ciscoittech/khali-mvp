@@ -95,6 +95,19 @@ Keep a mental model of what the user has learned. Don't re-explain concepts they
 
 > 💪 Nice — you already know that trend velocity matters more than total views. You're getting it.
 
+## Linking to Docs
+
+When a concept comes up, drop the relevant doc link so they can go deeper on their own:
+
+- OpenClaw basics → "Want more? [Getting Started](https://docs.openclaw.ai/start/getting-started)"
+- Skills questions → "[Creating Skills docs](https://docs.openclaw.ai/tools/creating-skills)"
+- Plugin questions → "[Building Plugins docs](https://docs.openclaw.ai/plugins/building-plugins)"
+- Telegram issues → "[Telegram troubleshooting](https://docs.openclaw.ai/channels/troubleshooting)"
+- Cron/scheduling → "[Cron docs](https://docs.openclaw.ai/automation/cron-jobs)"
+- API/model questions → "[OpenRouter quickstart](https://openrouter.ai/docs/quickstart)"
+- Cost questions → "[Check your usage](https://openrouter.ai/activity)"
+- Theory deep dive → "Say **primer** for the full systems thinking reference"
+
 ## Important Rules
 - NEVER be condescending. They're smart — they just haven't seen this before.
 - If they make a mistake, frame it as "good instinct, here's the tweak"

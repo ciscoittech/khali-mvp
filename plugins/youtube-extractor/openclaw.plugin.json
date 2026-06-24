@@ -1,0 +1,21 @@
+{
+  "id": "youtube-extractor",
+  "name": "YouTube Extractor",
+  "description": "Extract transcripts, metadata, and trending data from YouTube videos.",
+  "version": "0.1.0",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {}
+  },
+  "activation": {
+    "onStartup": true
+  },
+  "contracts": {
+    "tools": [
+      "extract_youtube_transcript",
+      "write_shorts_script",
+      "scan_youtube_trends"
+    ]
+  }
+}

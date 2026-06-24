@@ -1,0 +1,29 @@
+{
+  "id": "video-generator",
+  "name": "Video Generator",
+  "description": "Generate short-form videos using Google Veo 3.1 Lite via OpenRouter. Downloads completed videos to local storage.",
+  "version": "0.1.0",
+  "configSchema": {
+    "type": "object",
+    "properties": {
+      "openrouterApiKey": {
+        "type": "string",
+        "description": "OpenRouter API key for Veo 3.1 Lite access"
+      },
+      "downloadsDir": {
+        "type": "string",
+        "description": "Local directory for downloaded videos",
+        "default": "./downloads"
+      }
+    },
+    "required": ["openrouterApiKey"]
+  },
+  "activation": {
+    "onStartup": true
+  },
+  "contracts": {
+    "tools": [
+      "generate_video"
+    ]
+  }
+}

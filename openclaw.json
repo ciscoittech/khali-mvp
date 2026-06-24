@@ -1,0 +1,51 @@
+{
+  "$schema": "https://openclaw.ai/schema/openclaw.json",
+  "gateway": {
+    "bind": "127.0.0.1",
+    "port": 3126
+  },
+  "models": [
+    {
+      "id": "main",
+      "provider": "openrouter",
+      "model": "deepseek/deepseek-v4-flash",
+      "default": true
+    }
+  ],
+  "channels": [
+    {
+      "id": "telegram",
+      "type": "telegram",
+      "enabled": true,
+      "config": {
+        "botToken": "${TELEGRAM_BOT_TOKEN}"
+      }
+    },
+    {
+      "id": "email",
+      "type": "email",
+      "enabled": true,
+      "config": {
+        "imapHost": "${EMAIL_IMAP_HOST}",
+        "imapPort": 993,
+        "smtpHost": "${EMAIL_SMTP_HOST}",
+        "smtpPort": 587,
+        "email": "${EMAIL_ADDRESS}",
+        "password": "${EMAIL_PASSWORD}"
+      }
+    }
+  ],
+  "plugins": [
+    "./plugins/youtube-extractor",
+    "./plugins/video-generator",
+    "./plugins/trend-scout"
+  ],
+  "skills": [
+    "./skills/primer.md",
+    "./skills/coach.md",
+    "./skills/explain-mode.md",
+    "./skills/shorts-producer.md",
+    "./skills/trend-hunter.md",
+    "./skills/daily-digest.md"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "trend-scout",
+  "name": "Trend Scout",
+  "description": "Monitor YouTube and Google Trends for rising content opportunities. Identifies videos gaining momentum before they peak.",
+  "version": "0.1.0",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {}
+  },
+  "activation": {
+    "onStartup": true
+  },
+  "contracts": {
+    "tools": [
+      "check_google_trends",
+      "get_channel_recent"
+    ]
+  }
+}

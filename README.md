@@ -164,6 +164,61 @@ Teaches you to find the ONE bottleneck and focus there. In Khali, the constraint
 
 ---
 
+## Using Claude Code / Claude Desktop
+
+This repo includes a built-in Claude agent and commands that run on **Haiku** (cheapest model) to help you learn and troubleshoot.
+
+### Setup
+1. Open this repo in Claude Code or add it to Claude Desktop
+2. The `khali-guide` agent is auto-discovered from `.claude/agents/`
+
+### Commands
+
+| Command | What it does |
+|---------|-------------|
+| `/help` | Show all commands, prompts, and troubleshooting guides |
+| `/primer` | Walk through the systems thinking theory interactively |
+| `/assignment` | View your current assignment and track progress |
+| `/status` | Check system health — plugins, config, env, downloads |
+| `/debug [error]` | Paste an error message, get a diagnosis and fix |
+
+### Prompts You Can Use
+
+**Learning:**
+- `"explain [concept]"` — plain-English explanation of any concept
+- `"why did that happen"` — understand the last error or result
+- `"show me an example"` — see working code for what you're building
+- `"what should I do next"` — get guided next steps
+
+**Building:**
+- `"help me write a skill"` — step-by-step skill creation
+- `"help me write a plugin"` — step-by-step plugin creation
+- `"help me connect gmail"` — Assignment 001 walkthrough
+- `"help me set up telegram"` — bot setup walkthrough
+
+**Troubleshooting:**
+- `"debug [paste error]"` — paste any error and get a fix
+- `"check my plugin"` — validate plugin structure and build
+- `"check my skill"` — validate skill markdown format
+- `"check my env"` — verify .env has required keys
+- `"why won't it start"` — diagnose OpenClaw startup issues
+
+### Common Issues
+
+| Problem | Fix |
+|---------|-----|
+| `openclaw: command not found` | Install: `curl -fsSL https://openclaw.ai/install.sh \| bash` |
+| `Cannot find module 'openclaw/plugin-sdk'` | Build the plugin: `cd plugins/[name] && npm install && npm run build` |
+| `401 / unauthorized` | Check `.env` has a valid `OPENROUTER_API_KEY` — get one at [openrouter.ai](https://openrouter.ai) |
+| `address already in use :3126` | Another process on that port. Run `lsof -i :3126` then `kill -9 [PID]` |
+| `No captions available` | Video doesn't have subtitles. Try a different video. |
+| `content may have been filtered` (Veo) | Prompt hit safety filter — remove celebrity names and retry |
+| `Video generation timed out` | Veo was slow. Try again, or check [OpenRouter status](https://openrouter.ai) |
+| Gmail won't connect | Need an [App Password](https://myaccount.google.com/apppasswords), not your regular password. 2FA required. |
+| Bot not responding on Telegram | Check `TELEGRAM_BOT_TOKEN` in `.env`. Make sure no other instance is using the same bot. |
+
+---
+
 ## Documentation
 
 ### OpenClaw

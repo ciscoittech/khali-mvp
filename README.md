@@ -271,6 +271,23 @@ khali-mvp/
 
 ---
 
+## Built With the Framework From "From Prompts to Pipelines"
+
+This system uses the same four concepts taught in the book:
+
+| Concept | Where You See It in Khali |
+|---------|--------------------------|
+| **Instruction** | The skill files. `shorts-producer.md` tells the system exactly how to write scripts, what hooks to use, what format to follow. |
+| **Memory** | Your trend scores, production stats, and content library persist between sessions. The system remembers what worked. |
+| **Control** | The coach checks your output. The approval step prevents bad scripts from becoming bad videos. The trend scorer rejects low-potential topics. |
+| **Flow** | YouTube link in, video out. Five stages, each feeding the next. Remove one and the pipeline breaks. |
+
+**Want to go deeper?** Read the free chapter: [Why That Worked (And Why Most AI Doesn't)](https://github.com/ciscoittech/prompts-to-pipelines-openclaw/blob/main/book/chapters/ch02-v4-draft.md). It teaches you the diagnostic framework you can use on Khali or any AI system.
+
+**Want to build your own?** [From Prompts to Pipelines](https://github.com/ciscoittech/prompts-to-pipelines-openclaw) teaches you to build three complete systems from scratch using OpenClaw, each more complex than the last. Khali uses the same patterns.
+
+---
+
 ## License
 
 MIT

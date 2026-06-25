@@ -89,13 +89,28 @@ Type **`find trends`** or let the auto-scanner run every 6 hours. It surfaces ri
 
 Configure your niches: **`set niches: tech, AI, cooking`**
 
-### Step 5: Change the Rules (Month 1+)
+### Step 5: Assignment 001 — Close the Loop (Week 2-3)
+
+Your first real assignment: **connect Gmail to close the feedback loop.**
+
+Right now the system is an open loop — it makes shorts but never hears back. Did people comment? Did the algorithm pick it up? You're flying blind. That's the most dangerous thing in systems thinking (Meadows).
+
+Type **`assignment 1`** in Telegram for the full brief. Here's the summary:
+
+1. **Connect Gmail** to OpenClaw as a channel
+2. **Route YouTube notifications** (comments, analytics, subscribers) through a Gmail filter
+3. **Write your own skill** (`youtube-inbox-monitor.md`) that reads comment emails and reports back
+4. **Answer 5 questions** about what your inbox means as a system — what other emails are signals? Where does the constraint move? What's the leverage point?
+
+You can use AI to help with the technical parts. The questions are what matter — they teach you to think in systems, not just use them. See `skills/assignment-001-email-feedback-loop.md` for the full guide.
+
+### Step 6: Change the Rules (Month 1+)
 
 This is where the real power is. Open `skills/shorts-producer.md` in a text editor and change the hook formulas. That's **leverage point 4** (Meadows) — you just changed a rule that affects every script the system writes.
 
 Type **`explain mode`** to see exactly what prompts the AI receives and why. Turn it off with **`explain mode off`**.
 
-### Step 6: Go Deeper
+### Step 7: Go Deeper
 
 | Want to... | Do this |
 |-----------|---------|
@@ -119,6 +134,7 @@ Type **`explain mode`** to see exactly what prompts the AI receives and why. Tur
 | **coach** | Always-on mentor — explains with systems language | After every action |
 | **explain-mode** | Toggle deep-dive breakdowns of every step | "explain mode" on/off |
 | **primer** | Systems thinking foundation (Meadows + Goldratt) | "primer" anytime |
+| **assignment-001** | First assignment: connect Gmail as a feedback loop | "assignment 1" |
 
 ## The Tools (3 Plugins)
 

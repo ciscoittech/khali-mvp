@@ -67,12 +67,12 @@ export default defineToolPlugin({
           })
         ),
       }),
-      execute: async ({ hook, script, visual_notes, video_id }, ctx) => {
-        const apiKey = ctx.config?.openrouterApiKey || process.env.OPENROUTER_API_KEY;
+      execute: async ({ hook, script, visual_notes, video_id }, ctx: any) => {
+        const apiKey = ctx?.config?.openrouterApiKey || process.env.OPENROUTER_API_KEY;
         if (!apiKey) throw new Error("OpenRouter API key not configured");
 
         const downloadsDir =
-          ctx.config?.downloadsDir || join(process.cwd(), "downloads");
+          ctx?.config?.downloadsDir || join(process.cwd(), "downloads");
         await mkdir(downloadsDir, { recursive: true });
 
         const prompt = buildVeoPrompt(hook, script, visual_notes);
